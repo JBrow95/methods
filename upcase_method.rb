@@ -1,5 +1,5 @@
 str = "dog"
 
 def upper(str)
-	 # str = str.split("")
+	 str = str.split("")
 end

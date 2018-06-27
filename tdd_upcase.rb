@@ -3,12 +3,12 @@ require_relative "upcase_method.rb"
 
 class TestUpcaseMethod < Minitest::Test
 
-	def test_if_string_is_class
-		assert_equal(String, upper("").class)
+	def test_if_string_is_now_Array
+		assert_equal(Array, upper("").class)
 	end
 
 	def test_if_string_equals_dog
-		assert_equal("dog", upper("dog"))
+		assert_equal("dog", upper(str))
 	end
 
 	def test_if_1st_pos_equals_d
