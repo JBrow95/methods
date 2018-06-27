@@ -1,3 +1,3 @@
 def upper()
-
+	str = ""
 end
