@@ -1,3 +1,3 @@
-def upper()
-	str = ""
+def upper(str)
+	str
 end
