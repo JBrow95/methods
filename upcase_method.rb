@@ -9,7 +9,7 @@ def upper(str)
 		idx += 1
 	
 	end
-	
+
 	return str.join("")
 end
 
