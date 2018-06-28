@@ -9,15 +9,20 @@ class TestUpcaseMethod < Minitest::Test
 
 	def test_if_1st_pos_is_capitolized
 		str = ""
-		assert_equal("Dog", upper("dog"))
+		assert_equal("D", upper("dog")[0])
 	end
 
 	def test_if_2nd_pos_is_capitolized
 		str = ""
-		assert_equal("DOg", upper("dog"))
+		assert_equal("O", upper("dog")[1])
 	end 
 
 	def test_if_3rd_pos_is_capitolized
+		str = ""
+		assert_equal("G", upper("dog")[2])
+	end
+
+	def test_if_str_equals_dog_capialized
 		str = ""
 		assert_equal("DOG", upper("dog"))
 	end
