@@ -21,4 +21,9 @@ class TestUpcaseMethod < Minitest::Test
 		str = "dog"
 		assert_equal("DOg", upper(str))
 	end 
+
+	def test_if_3rd_pos_is_capitolized
+		str = "dog"
+		assert_equal("DOG", upper(str))
+	end
 end 
