@@ -1,5 +1,4 @@
-str = "dog"
-
+str = ""
 def upper(str)
 	str = str.split(",")
 
@@ -9,7 +8,6 @@ def upper(str)
 		str[idx][1] = str[idx][1].capitalize
 		str[idx][2] = str[idx][2].capitalize
 		idx += 1
-	
 	end
 
 	return str.join("")
