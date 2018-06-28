@@ -4,14 +4,15 @@ require_relative "upcase_method.rb"
 class TestUpcaseMethod < Minitest::Test
 
 	def test_if_string_is_now_Array
-		assert_equal(Array, upper("").class)
+		assert_equal(String, upper("").class)
 	end
 
 	def test_if_string_equals_dog
-		assert_equal(["d","o","g"], upper("dog"))
+		str = "dog"
+		assert_equal("dog", upper(str))
 	end
 
-	def test_if_1st_pos_equals_d
-		assert_equal(["d","o","g"], upper("dog"), [1])
+	def test_if_1st_pos_is_capitolized
+		assert_equal("Dog", upper("dog"))
 	end
 end 
