@@ -13,4 +13,8 @@ def upper(str)
 	return str.join("")
 end
 
-upper(str)
+def no_nill()
+	arr = []
+
+	arr << upper(str)
+end	

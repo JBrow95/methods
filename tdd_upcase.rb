@@ -7,22 +7,18 @@ class TestUpcaseMethod < Minitest::Test
 		assert_equal(String, upper("").class)
 	end
 
-	# def test_if_string_equals_dog
-	# 	str = "dog"
-	# 	assert_equal("dog", upper(str))
-	# end
+	def test_if_1st_pos_is_capitolized
+		str = ""
+		assert_equal("Dog", upper("dog"))
+	end
 
-	# def test_if_1st_pos_is_capitolized
-	# 	str = "dog"
-	# 	assert_equal("Dog", upper(str))
-	# end
-
-	# def test_if_2nd_pos_is_capitolized
-	# 	str = "dog"
-	# 	assert_equal("DOg", upper(str))
-	# end 
+	def test_if_2nd_pos_is_capitolized
+		str = ""
+		assert_equal("DOg", upper("dog"))
+	end 
 
 	def test_if_3rd_pos_is_capitolized
-		assert_equal("CAT", upper("cat"))
+		str = ""
+		assert_equal("DOG", upper("dog"))
 	end
 end 
