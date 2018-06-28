@@ -8,10 +8,10 @@ class TestUpcaseMethod < Minitest::Test
 	end
 
 	def test_if_string_equals_dog
-		assert_equal("dog", upper(str))
+		assert_equal(["d","o","g"], upper("dog"))
 	end
 
 	def test_if_1st_pos_equals_d
-		assert_equal(["d"], upper(str), [0])
+		assert_equal(["d","o","g"], upper("dog"), [1])
 	end
 end 
